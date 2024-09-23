@@ -1,4 +1,4 @@
-package org.dopey.client.gui;
+package org.sapporo.client.gui;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
@@ -7,12 +7,16 @@ import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.tooltip.Tooltip;
 import net.minecraft.client.gui.widget.ButtonWidget;
 import net.minecraft.text.Text;
-import org.dopey.client.mods.movement.*;
-import org.dopey.client.mods.pvp.AutoCrystal;
-import org.dopey.client.mods.pvp.AutoTotem;
-import org.dopey.client.mods.pvp.CrystalAura;
-import org.dopey.client.mods.util.NoFall;
-import org.dopey.client.mods.util.Velocity;
+import org.sapporo.client.mods.movement.*;
+import org.sapporo.client.mods.movement.CreativeFly;
+import org.sapporo.client.mods.pvp.AutoCrystal;
+import org.sapporo.client.mods.pvp.AutoTotem;
+import org.sapporo.client.mods.pvp.CrystalAura;
+import org.sapporo.client.mods.util.NoFall;
+import org.sapporo.client.mods.util.Velocity;
+import org.sapporo.client.mods.movement.AutoSprint;
+import org.sapporo.client.mods.movement.ElytraControl;
+import org.sapporo.client.mods.movement.Speed;
 
 @Environment(EnvType.CLIENT)
 public class ClickGUI extends Screen {

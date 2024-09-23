@@ -1,7 +1,7 @@
-package org.dopey.client;
+package org.sapporo.client;
 
-import org.dopey.client.gui.ClickGUI;
-import org.dopey.client.manager.ModuleManager;
+import org.sapporo.client.gui.ClickGUI;
+import org.sapporo.client.manager.ModuleManager;
 import org.lwjgl.glfw.GLFW;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
@@ -10,7 +10,7 @@ import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.option.KeyBinding;
 import net.minecraft.client.util.InputUtil;
 
-public class Dopey implements ClientModInitializer {
+public class Sapporo implements ClientModInitializer {
     private KeyBinding keyBinding;
 
     @Override

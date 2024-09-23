@@ -1,4 +1,4 @@
-package org.dopey.client.mixins;
+package org.sapporo.client.mixins;
 
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
@@ -15,11 +15,11 @@ public class TitleScreenMixin {
     MinecraftClient mc = MinecraftClient.getInstance();
     @Inject(at = @At("HEAD"), method = "init")
     private void init(CallbackInfo ci) {
-        mc.getWindow().setTitle("dopey client version ALPHA_1.0");
+        mc.getWindow().setTitle("Sapporo v1.5");
 
     }
     @Inject(at = @At("HEAD"), method = "render")
     private void render(DrawContext context, int mouseX, int mouseY, float delta, CallbackInfo ci) {
-        context.drawText(mc.textRenderer,"dopey client private release",4,4,new Color(137,29,209).getRGB(),true);
+        context.drawText(mc.textRenderer,"Sapporo Client",4,4,new Color(137,29,209).getRGB(),true);
     }
 }

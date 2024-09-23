@@ -1,4 +1,4 @@
-package org.dopey.client.mods.pvp;
+package org.sapporo.client.mods.pvp;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
@@ -8,7 +8,7 @@ import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
-import org.dopey.client.mods.Module;
+import org.sapporo.client.mods.Module;
 
 @Environment(EnvType.CLIENT)
 public class AutoTotem extends Module {
@@ -52,6 +52,12 @@ public class AutoTotem extends Module {
 
         if (fEnabled) {
             if (!isTotemInOffhand(player)) {
+                int totemSlot = findTotemInInventory(player);
+
+                if (totemSlot != -1) {
+                    replaceTotemInOffhand(player, totemSlot);
+                }
+            } else if (player.getOffHandStack().isEmpty()) {
                 int totemSlot = findTotemInInventory(player);
 
                 if (totemSlot != -1) {

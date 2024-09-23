@@ -1,10 +1,10 @@
-package org.dopey.client.mods.movement;
+package org.sapporo.client.mods.movement;
 
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.math.Vec3d;
-import org.dopey.client.mods.Module;
+import org.sapporo.client.mods.Module;
 
 public class Speed extends Module {
 
@@ -28,7 +28,7 @@ public class Speed extends Module {
 
             Vec3d newVelocity = new Vec3d(
                     lookVec.x * speedMultiplier,
-                    velocity.y - 0.1,
+                    velocity.y,
                     lookVec.z * speedMultiplier
             );
 

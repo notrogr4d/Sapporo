@@ -1,10 +1,10 @@
-package org.dopey.client.mods.movement;
+package org.sapporo.client.mods.movement;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.minecraft.client.MinecraftClient;
-import org.dopey.client.mods.Module;
+import org.sapporo.client.mods.Module;
 
 @Environment(EnvType.CLIENT)
 public class AutoSprint extends Module {

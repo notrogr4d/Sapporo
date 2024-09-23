@@ -1,20 +1,20 @@
 {
   "schemaVersion": 1,
-  "id": "dopey",
-  "version": "beta 1.0",
-  "name": "dopey",
-  "description": "swagger block game client",
+  "id": "sapporo",
+  "version": "RELEASE 1.6",
+  "name": "Sapporo ",
+  "description": "block game utility client",
   "authors": [],
   "contact": {},
   "license": "MIT",
   "environment": "client",
   "entrypoints": {
     "client": [
-      "org.dopey.client.Dopey"
+      "org.sapporo.client.Sapporo"
     ]
   },
   "mixins": [
-    "dopey.mixins.json"
+    "sapporo.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=${loader_version}",

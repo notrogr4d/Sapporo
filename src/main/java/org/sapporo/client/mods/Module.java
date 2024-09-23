@@ -1,10 +1,11 @@
-package org.dopey.client.mods;
+package org.sapporo.client.mods;
 
-public class Module {
+public abstract class Module {
 
     public String name;
 
     public Module(String name) {
         this.name = name;
     }
+
 }
